@@ -68,6 +68,28 @@ DELETE FROM users
 WHERE name = "Arjun Patel" ;
 select * from users;
 -- Outcome: A populated database with clean and consistent data.
+-- Interview Question 
+-- 1.Difference between NULL and 0?
+-- NULL means no value, unkown value, 0 means actual numeric value
+-- 2.What is a default constraint?
+-- A DEFAULT constraint assigns a value automatically if no value is provided.
+-- status VARCHAR(20) DEFAULT 'active'
+-- 3.How does IS NULL work?
+-- Used to check missing values.
+SELECT * FROM users
+WHERE name IS NULL;
+-- 4.How do you update multiple rows?
+-- it will deceide upon the condition
+-- 5.Can we insert partial values?
+-- inserting data into selected column only not all the recordsof the table
+-- 6.what happens if a NOT NULL field is left empty?
+-- 👉 The database will throw an error and reject the insert.
+-- 7 .How do you rolback a deletion?
+-- START TRANSACTION; DELETE FROM users WHERE user_id = 2; ROLLBACK;
+-- 8.Can we insert values into specific columns only
+-- 9.How to insert values using SELECT?
+-- 10.What is ON DELETE CASCADE?
+
 
 
 
